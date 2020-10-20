@@ -1,0 +1,24 @@
+.create-category {
+  background-color: darkgrey;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-around;
+  display: flex;
+}
+.create-area {
+  background-color: lightpink;
+  width: 60%;
+  height: 250px;
+  margin: 20px;
+  text-align: center;
+}
+.p1 {
+  margin: 20px;
+}
+.category-name {
+  margin: 20px;
+  width: 40%;
+}
+.category-btn {
+  margin: 20px;
+}

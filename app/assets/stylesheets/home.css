@@ -1,0 +1,76 @@
+body a {
+  text-decoration: none;
+}
+.header {
+  background-color: darkseagreen;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.inner-header {
+  display: flex;
+}
+.golf-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.title {
+  height: 100px;
+  font-size: 30px;
+  font-weight: 100;
+  margin-left: 20px;
+  padding-top: 40px;
+  align-self: center;
+  color: rgb(78, 134, 236);
+}
+.input-user {
+  margin: 30px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: lemonchiffon;
+}
+/*カテゴリー。バー*/
+.categories-bar {
+  width: 300px;
+  height: 100vh;
+  background-color: darkseagreen;
+  margin: 10px;
+}
+.create-category-area {
+  height: 50px;
+  background-color: rgb(247, 199, 184);
+  margin: 10px;
+  text-align: center;
+  padding-top: 15px;
+}
+.categories {
+  background-color: rgb(198, 235, 198);
+  margin: 10px;
+}
+.category-name {
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid darkolivegreen;
+}
+/*コンテンツエリア*/
+.content-area {
+  background-color: darkseagreen;
+  height: 100vh;
+  width: calc(100vw - 300px);
+  margin: 10px;
+
+}
+.contents {
+  overflow: scroll;
+}
+.contents-container {
+  border: solid 1px darkolivegreen;
+  margin: 10px;
+  margin-bottom: 0px;
+  padding: 0 5px;
+}

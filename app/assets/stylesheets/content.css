@@ -1,0 +1,48 @@
+
+.content-area2 {
+  display: flex;
+  background-color: lemonchiffon;
+}
+/*コンテント表示一覧*/
+/* .contents-container {
+  margin: 10px;
+  margin-bottom: 0px;
+  padding: 0 5px;
+  border: 1px solid darkolivegreen;
+} */
+.content-low {
+  display: flex;
+  font-size: 13px;
+}
+.content-info {
+  display: contents;
+}
+.content-info li {
+  margin-right: auto;
+}
+
+/*コメント入力欄*/
+.create-content-area {
+  width: 300px;
+  background-color: darkseagreen;
+  height: 100vh;
+  margin: 10px;
+}
+.create-area {
+  height: 100px;
+  width: 95%;
+  background-color: rgb(247, 199, 184);
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+  padding-top: 15px;
+}
+/*コメント表示画面*/
+.show-content {
+  margin: 10px;
+  padding-left: 5px;
+  border: double darkolivegreen;
+}
+.content-top2 {
+  font-size: 21px;
+}

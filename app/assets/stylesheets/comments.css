@@ -1,0 +1,35 @@
+
+.content-area3 {
+  display: flex;
+  background-color: lemonchiffon;
+}
+.area3 {
+  width: calc(100vw - 300px);
+  height: 100vh;
+  background-color: darkseagreen;
+  margin: 10px;
+  padding-top: 10px;
+}
+.create-comment-area {
+  width: 300px;
+  background-color: darkseagreen;
+  height: 100vh;
+  margin: 10px;
+}
+/*コメント一覧*/
+.comment {
+  border: 1px solid darkolivegreen;
+  margin: 10px;
+  margin-bottom: 0px;
+  padding: 0 5px;
+}
+.comment-low {
+  display: flex;
+  font-size: 13px;
+}
+.comment-info {
+  display: contents;
+}
+.comment-info li {
+  margin: auto;
+}
