@@ -4,14 +4,12 @@
     <title>GolfChat</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-<<<<<<< Updated upstream
-=======
     <header class="header">
       <%=link_to '/' do %>
         <div class="inner-header">
@@ -32,7 +30,7 @@
         <% end %>
       </div>
     </header>
->>>>>>> Stashed changes
+
     <%= yield %>
   </body>
 </html>
