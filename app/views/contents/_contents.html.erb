@@ -1,13 +1,8 @@
-<div class="wrapper">
-  <div class="categories-bar">
-    <%= render "categories/categories_bar" %>
-  </div>
-
   <div class="content-area">
     <h1>ーコンテント一覧ー</h1>
     <% @contents.each do |content| %>
     <%# <div class="contents"> %>
-      <%= link_to category_content_path(content.category, content)  do %>
+      <%= link_to category_content_path(@category, content)  do %>
       <div class="contents-container">
           <h1 class="content-top">
               <%= content.content %>
@@ -19,9 +14,8 @@
                 <li> コメント数："あとで"</li>
             </ul>
           </div>
-        <% end %>
       </div>
       <% end %>
     <%# </div> %>
+    <% end %>
   </div>
-</div>

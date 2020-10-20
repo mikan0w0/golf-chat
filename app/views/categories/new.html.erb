@@ -1,0 +1,21 @@
+ 
+  <div class="create-category">
+
+    <div class="create-area">
+    <%= render 'shared/error_messages', model: @category %>
+
+    <%=form_with model: @category, local: true do |f|%>
+      <p class="p1">新しいカテゴリーを作成します</p>
+      <div class="category-form">
+        <%= f.text_field :name, class: 'input-category-name', placeholder: 'カテゴリー名を入力'%>
+      </div>
+      <div class="category-btn">
+        <%= f.submit class: 'input-category-btn' %>
+      </div>
+      <div class="category-btn">
+        <%= link_to "Back", root_path %>
+      </div>
+
+    <% end %>
+    </div>
+  </div>

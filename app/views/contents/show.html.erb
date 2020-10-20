@@ -1,0 +1,37 @@
+<div class="content-area3">
+  <%# <div> %>
+    <div class="area3">
+      <div class="show-content">
+        <div class="content-top2">
+            <%= @content[:content] %>
+        </div>
+        <div class="content-low">
+          <ul class="content-info">
+              <li> 作成者：<%= @content.user.name %></li>
+              <li> カテゴリー：<%= @content.category.name %></li>
+              <li> コメント数："あとで"</li>
+          </ul>
+        </div>
+      </div>
+      <h1>ーコメント一覧ー</h1>
+        <div class="show-comment">
+          <% @comments.each do |comment| %>
+          <div class="comment">
+            <div class="comment-top">
+              <%= comment.comment %>
+            </div>
+            <div class="comment-low">
+              <ul class="comment-info">
+                <li>ユーザー名：<%= comment.user.name %></li>
+                <li>コメント日時：<%= l comment.created_at %></li>
+              </ul>
+            </div>
+          </div>
+          <% end %>
+        </div>
+    </div>
+    <div class="create-comment-area">
+      <%= render template: "comments/new"%>
+    </div>
+  <%# </div> %>
+</div>

@@ -10,9 +10,27 @@
   </head>
 
   <body>
-    <header>
-      GOLF CHAT
+    <header class="header">
+      <%=link_to '/' do %>
+        <div class="inner-header">
+          <div>
+          <%= image_tag 'golf_logo.png', class: "golf-image" %>
+          </div>
+          <h1 class="title"> GOLF CHAT </h1>
+        </div>
+      <% end %>
+
+      <div class="input-user">
+        <% if user_signed_in?%>
+          <%= link_to current_user.name, edit_user_registration_path %>
+          <%= link_to "サインアウト", destroy_user_session_path, method: :delete %>
+        <% else %>
+          <%= link_to "サインイン", new_user_session_path %>
+          <%= link_to "新規登録", new_user_registration_path %>
+        <% end %>
+      </div>
     </header>
+
     <%= yield %>
   </body>
 </html>
