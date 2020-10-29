@@ -16,7 +16,13 @@
   height: 100vh;
   margin: 10px;
 }
+.input-comment {
+  height: 30vh;
+}
 /*コメント一覧*/
+.show-comment {
+  overflow: scroll;
+}
 .comment {
   border: 1px solid darkolivegreen;
   margin: 10px;

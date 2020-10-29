@@ -29,13 +29,19 @@
   margin: 10px;
 }
 .create-area {
-  height: 100px;
+  height: 50%;
   width: 95%;
   background-color: rgb(247, 199, 184);
   margin: auto;
   margin-top: 10px;
   text-align: center;
   padding-top: 15px;
+}
+.input-content {
+  height: 30vh;
+}
+.send-btn {
+  margin: 10px;
 }
 /*コメント表示画面*/
 .show-content {

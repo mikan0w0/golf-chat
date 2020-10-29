@@ -1,8 +1,8 @@
   <div class="create-area">
     <%= form_with model: [@category, @content], class: "form", local: true do |f|%>
-      <form class="form">
+      <form class="create-form">
         <div class="form2">  
-          <%= f.text_field :content, placeholder: 'type a content', class: 'input-content' %>
+          <%= f.text_area :content, placeholder: 'type a content', class: 'input-content' %>
         </div> 
         <%= f.submit 'SEND', class: 'send-btn' %>
       </form>

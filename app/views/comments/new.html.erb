@@ -2,7 +2,7 @@
   <%= form_with model: [@category, @content, @comment], class: "form", local: true do |f|%>
     <form class="form">
       <div class="form2">  
-        <%= f.text_field :comment, placeholder: 'type a comment', class: 'input-comment' %>
+        <%= f.text_area :comment, placeholder: 'type a comment', class: 'input-comment' %>
       </div> 
       <%= f.submit 'SEND', class: 'send-btn' %>
     </form>

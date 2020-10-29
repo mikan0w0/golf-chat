@@ -1,7 +1,7 @@
   <div class="content-area">
     <h1>ーコンテント一覧ー</h1>
+    <a href="javascript:history.back()">[戻る]</a>
     <% @contents.each do |content| %>
-    <%# <div class="contents"> %>
       <%= link_to category_content_path(@category, content)  do %>
       <div class="contents-container">
           <h1 class="content-top">
@@ -11,11 +11,10 @@
             <ul class="content-info">
                 <li> 作成者：<%= content.user.name %></li>
                 <li> カテゴリー：<%= content.category.name %></li>
-                <li> コメント数："あとで"</li>
+                <li> コメント数：<%= content.comments.size %></li>
             </ul>
           </div>
       </div>
       <% end %>
-    <%# </div> %>
     <% end %>
   </div>

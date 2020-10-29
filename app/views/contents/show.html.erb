@@ -9,11 +9,11 @@
           <ul class="content-info">
               <li> 作成者：<%= @content.user.name %></li>
               <li> カテゴリー：<%= @content.category.name %></li>
-              <li> コメント数："あとで"</li>
+              <li> コメント数：<%= @content.comments.size %></li>
           </ul>
         </div>
       </div>
-      <h1>ーコメント一覧ー</h1>
+      <h1>ーコメント一覧ー</h1><a href="javascript:history.back()">[戻る]</a>
         <div class="show-comment">
           <% @comments.each do |comment| %>
           <div class="comment">

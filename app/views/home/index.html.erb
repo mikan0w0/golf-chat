@@ -5,23 +5,22 @@
 
   <div class="content-area">
     <h1>ーコンテント一覧ー</h1>
-    <% @contents.each do |content| %>
-    <%# <div class="contents"> %>
-      <%= link_to category_content_path(content.category, content)  do %>
-      <div class="contents-container">
-          <h1 class="content-top">
-              <%= content.content %>
-          </h1>
-          <div class="content-low">
-            <ul class="content-info">
-                <li> 作成者：<%= content.user.name %></li>
-                <li> カテゴリー：<%= content.category.name %></li>
-                <li> コメント数："あとで"</li>
-            </ul>
-          </div>
+      <a href="javascript:history.back()">[戻る]</a>
+      <% @contents.each do |content| %>
+        <%= link_to category_content_path(content.category, content)  do %>
+        <div class="contents-container">
+            <h1 class="content-top">
+                <%= content.content %>
+            </h1>
+            <div class="content-low">
+              <ul class="content-info">
+                  <li> 作成者：<%= content.user.name %></li>
+                  <li> カテゴリー：<%= content.category.name %></li>
+                  <li> コメント数：<%= content.comments.size %></li>
+              </ul>
+            </div>
+          <% end %>
+        </div>
         <% end %>
-      </div>
-      <% end %>
-    <%# </div> %>
   </div>
 </div>
