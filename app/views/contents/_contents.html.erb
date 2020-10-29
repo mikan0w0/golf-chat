@@ -1,6 +1,8 @@
   <div class="content-area">
     <h1>ーコンテント一覧ー</h1>
-    <a href="javascript:history.back()">[戻る]</a>
+    <%= link_to :back do %>
+      <button>戻る</button>
+    <% end %>
     <% @contents.each do |content| %>
       <%= link_to category_content_path(@category, content)  do %>
       <div class="contents-container">

@@ -13,7 +13,10 @@
           </ul>
         </div>
       </div>
-      <h1>ーコメント一覧ー</h1><a href="javascript:history.back()">[戻る]</a>
+      <h1>ーコメント一覧ー</h1>
+      <%= link_to :back do %>
+        <button>戻る</button>
+      <% end %>
         <div class="show-comment">
           <% @comments.each do |comment| %>
           <div class="comment">
