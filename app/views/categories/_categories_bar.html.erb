@@ -2,6 +2,8 @@
   <div class="create-category-area">
     <% if user_signed_in? %>
       <%=link_to "新しいカテゴリーを作成する", new_category_path %>
+    <% else %>
+      <%= "カテゴリーの作成はログインが必要です" %>
     <% end %>
   </div>
   <h1>ーカテゴリー一覧ー</h1>

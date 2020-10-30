@@ -1,10 +1,14 @@
 <div class="create-area">
-  <%= form_with model: [@category, @content, @comment], class: "form", local: true do |f|%>
-    <form class="form">
-      <div class="form2">  
-        <%= f.text_area :comment, placeholder: 'type a comment', class: 'input-comment' %>
-      </div> 
-      <%= f.submit 'SEND', class: 'send-btn' %>
-    </form>
+  <% if user_signed_in? %>
+    <%= form_with model: [@category, @content, @comment], class: "form", local: true do |f|%>
+      <form class="form">
+        <div class="form2">  
+          <%= f.text_area :comment, placeholder: 'type a comment', class: 'input-comment' %>
+        </div> 
+        <%= f.submit 'SEND', class: 'send-btn' %>
+      </form>
+    <% end %>
+  <% else %>
+    <%= "コメントするにはログインが必要です"%>
   <% end %>
 </div>
