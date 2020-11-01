@@ -17,9 +17,9 @@
       <%= link_to :back do %>
         <button>戻る</button>
       <% end %>
-        <div class="show-comment">
-          <% @comments.each do |comment| %>
-          <div class="comment">
+        <div class="show-comment"id="show-comment">
+          <% @comments.reverse_each do |comment| %>
+          <div class="comment" >
             <div class="comment-top">
               <%= comment.comment %>
             </div>
