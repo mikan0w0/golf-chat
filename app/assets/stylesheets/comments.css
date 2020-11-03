@@ -9,6 +9,7 @@
   background-color: darkseagreen;
   margin: 10px;
   padding-top: 10px;
+  overflow: scroll;
 }
 .create-comment-area {
   width: 300px;
