@@ -7,7 +7,8 @@ class CommentsController < ApplicationController
     @comment = @content.comments.new(comment_params)
     if @comment.valid?
       @comment.save
-      redirect_to category_content_path(@category, @content)
+      ActionCable.server.broadcast 'comment_channel', content: @comment, name: current_user.name, at: l(@comment.created_at)
+      # redirect_to category_content_path(@category, @content)
     else
       render "@content/show"
     end

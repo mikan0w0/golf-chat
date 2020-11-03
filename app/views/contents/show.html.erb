@@ -14,12 +14,12 @@
         </div>
       </div>
       <h1>ーコメント一覧ー</h1>
-      <%= link_to :back do %>
+      <%= link_to category_contents_path(@category.id) do %>
         <button>戻る</button>
       <% end %>
-        <div class="show-comment">
-          <% @comments.each do |comment| %>
-          <div class="comment">
+        <div class="show-comment"id="show-comment">
+          <% @comments.reverse_each do |comment| %>
+          <div class="comment" >
             <div class="comment-top">
               <%= comment.comment %>
             </div>
