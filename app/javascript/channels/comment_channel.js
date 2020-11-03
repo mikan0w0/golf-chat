@@ -11,14 +11,10 @@ consumer.subscriptions.create("CommentChannel", {
 
   received(data) {
     // Called when there's incoming data on the websocket for this channel
-    const html = `<div class="comment-top">
+    const html = `<div class="comment">
+                    <div class="comment-top">
                     ${data.content.comment}
-                  </div>
-                  <div class="comment-low">
-                    <ul class="comment-info">
-                      <li>ユーザー名：${data.content.user_id}</li>
-                      <li>コメント日時：${data.content.created_at}</li>
-                    </ul>
+                    </div>
                   </div>`;
     const comment = document.getElementById('show-comment')
     const newComment = document.getElementById('input-comment')
