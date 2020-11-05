@@ -3,7 +3,7 @@
     <%= link_to "/" do %>
       <button>戻る</button>
     <% end %>
-    <% @contents.each do |content| %>
+    <% @contents.reverse_each do |content| %>
       <%= link_to category_content_path(@category, content)  do %>
       <div class="contents-container">
           <h1 class="content-top">
